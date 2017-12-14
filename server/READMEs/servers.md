@@ -40,6 +40,8 @@ netplayers(io);
 
 Exemple config Server.js
 ==========================
+`
+
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
@@ -58,10 +60,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 server.listen(config.port);
 log.info('Server is on bruh and running on port: '+ config.port);
 
-
+`
  SET ROUTES FOR EXPRESS API HERE: 
 ==========================
-
+`
 // No Authentication required:
 app.use('/',require('./api_routes/login_routes'));
 
@@ -73,9 +75,10 @@ app.use('/example',require('./api_routes/example.js'));
 
 //Static Server - Used to serve static files (HTNL,PNG,etc.)
 app.use('/static', express.static('public'));
-
+`
  ADD SOCKET IO MODULES HERE:
 ==========================
+`
 var exampleSocket = require('./socket_modules/exampleSocket');
 
 //add socket online here 
@@ -115,12 +118,13 @@ io.on('connection', function(socket){
   });
 });
 
-
+`
  BIND SOCKET IO MODULES HERE:
 ==========================
+`
 exampleSocket(io);
 
 // add your socket here
 netplayers(io);
-
+`
 
