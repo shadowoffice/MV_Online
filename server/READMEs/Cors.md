@@ -19,7 +19,7 @@ Add this line to the `API SECTION` section in the `server.js` file:
 Configuration in server/configurations/cors.js
 -------------
 
-MyCorsHost = * for allowed all url to connect to your servers,
+MyCorsHost = '*' for allowed all url to connect to your servers,
 for juste only your url on your server juste got your domain.
 exemple : MyCorsHost: 'mydomain.com',
 
@@ -32,6 +32,8 @@ MyHeader: its header controles by servers for browsers :) exemple on this projec
 if you have new header on project you can add here :)
 exemple : MyHeader: 'DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range, X-Acces-Token, Accept-Type, MyNewHeaderHere'
 
+Config Default
+-------------
 MyCorsHost: '*',
 MyMethods: 'GET,PUT,POST',
 MyHeader: 'DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range, X-Acces-Token, Accept-Type'
