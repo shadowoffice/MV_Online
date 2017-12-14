@@ -1,4 +1,4 @@
-MV_online Servesr config
+MV_online Server config.js
 ==========================
 
 Introduction
