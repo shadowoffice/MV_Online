@@ -12,19 +12,34 @@ its variable called on header on servers.js
 2. Router
 
 setting router for your api add line of API your desire.
-you can add save system here 
+you can add save system here !
 
-exemple app.use('/cloudsave',require('./api_routes/cloudsave.js'));
+exemple 
+app.use('/cloudsave',require('./api_routes/cloudsave.js'));
 
-3. Module
+
+3. Module Socket
+
+you can add here module socket net player for online your install module socket you need install bind socket
+
+var netplayers = require('./socket_modules/netplayer');
+
+
 4. Bind socket
 
+here install bind socket for online 
 
-/=============================================================================
-// Nelderson's Online Core Server
-// Version: 0.2.2 - Added abilty to limit users to one login.
-// Version: 0.2.1
-//=============================================================================
+netplayers(io);
+
+
+
+
+
+
+
+
+Exemple config Server.js
+=============================================================================
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
