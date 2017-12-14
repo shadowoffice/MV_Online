@@ -30,8 +30,9 @@ dont give acces to DEL can open to delete files on servers.
 Exemple : MyMethods: 'GET,PUT,POST,DEL', = VERY NOT RECOMMANDED !!!
 
 
-MyHeader: its header controles by servers for browsers :) exemple on this project use X-Acces-Token
-if you have new header on project you can add here :)
+MyHeader: its header controles by servers for browsers
+exemple on this project use X-Acces-Token
+if you have new header on project you can add here
 
 Exemple : MyHeader: 'DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range, X-Acces-Token, Accept-Type, MyNewHeaderHere'
 
