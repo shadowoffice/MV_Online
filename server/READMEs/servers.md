@@ -6,11 +6,11 @@ Introduction
 Who to config servers.js 
 
 1. Variable call
-1.its variable called on header on servers.js
+ 1.its variable called on header on servers.js
 
 2. Router
-2.setting router for your api add line of API your desire.
-you can add save system here 
+ 2.setting router for your api add line of API your desire.
+ 2.you can add save system here 
 
 exemple app.use('/cloudsave',require('./api_routes/cloudsave.js'));
 
