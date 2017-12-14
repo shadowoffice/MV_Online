@@ -41,20 +41,30 @@ netplayers(io);
 Exemple config Server.js
 ==========================
 
-
 var express = require('express');
+
 var app = express();
+
 var server = require('http').Server(app);
+
 var io = require('socket.io')(server);
+
 var config = require('./configurations/config');
+
 var bodyParser = require('body-parser');
+
 var logger = require('morgan'); //For development
+
 var socketioJwt = require('socketio-jwt');
+
 var log = require('tracer').colorConsole(config.loggingConfig);
+
 var loggedInUsers = {};
 
 app.use(logger('dev'));//For development
+
 app.use(bodyParser.json());
+
 app.use(bodyParser.urlencoded({extended: false}));
 
 server.listen(config.port);
@@ -124,7 +134,8 @@ io.on('connection', function(socket){
 exampleSocket(io);
 
 // add your socket here
-`netplayers(io);`
+
+netplayers(io);
 
 
 
